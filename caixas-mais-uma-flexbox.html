@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            .container {
+                width: 75%;
+                margin: auto;
+                padding: 0;
+                background-color: #CCC;
+                display: flex;
+            }
+            .caixa {
+                border: 5px solid #33d;
+                border-radius: 10px;
+                background-color: #3dd;
+                font-size: 200%;
+                text-align: center;
+                line-height: 3;
+                margin-left: .5%;
+                padding: 0;
+
+                flex: 1;
+                height: 100px;
+            }
+            .caixa:first-child {
+                margin-left: 0;
+            }
+        </style>
+        <meta charset="utf-8">
+        <title>Quatro caixinhas lado a lado :)</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="caixa">1</div>
+            <div class="caixa">2</div>
+            <div class="caixa">3</div>
+            <div class="caixa">4</div>
+        </div>
+        <script src="prefixfree.min.js"></script>
+    </body>
+</html>
