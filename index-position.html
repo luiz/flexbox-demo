@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            footer {
+                background-image: url(fundo-rodape.png);
+                width: 100%;
+                padding: .5em 0;
+            }
+
+            .container {
+                width: 940px;
+                margin: 0 auto;
+                position: relative;
+            }
+
+            footer h1 {
+                height: 52px;
+                width: 225px;
+                text-indent: -9999px;
+                background-image: url(logo-rodape.png);
+                background-repeat: no-repeat;
+            }
+
+            .social {
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                top: 11px;
+                right: 0;
+            }
+
+            .social li {
+                display: inline-block;
+                list-style: none;
+            }
+
+            .social li a {
+                height: 32px;
+                width: 32px;
+                display: block;
+                text-indent: -9999px;
+            }
+
+            .social li a[href*="facebook.com"] {
+                background-image: url(facebook.png);
+            }
+            .social li a[href*="twitter.com"] {
+                background-image: url(twitter.png);
+            }
+            .social li a[href*="plus.google.com"] {
+                background-image: url(googleplus.png);
+            }
+        </style>
+        <title>Position demo</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <footer>
+            <div class="container">
+                <h1>Mirror Fashion</h1>
+                <ul class="social">
+                    <li><a href="http://facebook.com/mirrorfashion">Facebook</a></li>
+                    <li><a href="http://twitter.com/mirrorfashion">Twitter</a></li>
+                    <li><a href="http://plus.google.com/mirrorfashion">Google+</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="prefixfree.min.js"></script>
+    </body>
+</html>
