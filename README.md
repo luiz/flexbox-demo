@@ -12,3 +12,13 @@ navegador e veja como os layouts se adaptam.
 * [Quatro caixas (usando flexbox; compare os CSS!)](http://luiz.github.io/flexbox-demo/caixas-mais-uma-flexbox.html)
 * [Footer (usando position)](http://luiz.github.io/flexbox-demo/footer-position.html)
 * [Footer (usando flexbox)](http://luiz.github.io/flexbox-demo/footer-flexbox.html)
+
+*Nota*: verifique se seu navegador já suporta o uso do Flexbox
+[aqui](http://caniuse.com/flexbox). Navegadores suportados até o momento
+(10/07/2013):
+
+* IE a partir da versão 11
+* Firefox a partir da versão 21
+* Chrome a partir da versão 21
+* Opera a partir da versão 12.1
+* Safari e iOS Safari a partir da versão 7
