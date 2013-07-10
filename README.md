@@ -13,7 +13,7 @@ navegador e veja como os layouts se adaptam.
 * [Footer (usando position)](http://luiz.github.io/flexbox-demo/footer-position.html)
 * [Footer (usando flexbox)](http://luiz.github.io/flexbox-demo/footer-flexbox.html)
 
-*Nota*: verifique se seu navegador já suporta o uso do Flexbox
+**Nota**: verifique se seu navegador já suporta o uso do Flexbox
 [aqui](http://caniuse.com/flexbox). Navegadores suportados até o momento
 (10/07/2013):
 
