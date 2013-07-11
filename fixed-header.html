@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            html, body {
+                height: 100%;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+            main {
+                flex: 1;
+                overflow: auto;
+            }
+            main, header, footer {
+                padding: 1em;
+            }
+            header, footer {
+                background-color: black;
+                color: white;
+            }
+        </style>
+        <meta charset="utf-8">
+        <title>Cabeçalho e rodapé fixos</title>
+    </head>
+    <body>
+        <header>
+            <h1>Cabeçalho</h1>
+        </header>
+        <main>
+            <h1>Corpo</h1>
+            <!--lorem-->
+            <p>Urna. Suspendisse potenti. In hac
+                habitasse platea dictumst. Cras quis lacus. Vestibulum rhoncus
+                congue lacus. Vivamus euismod, felis quis commodo viverra,
+                dolor elit dictum ante, et mollis eros augue at est. Class
+                aptent taciti sociosqu ad litora torquent per conubia nostra,
+                per inceptos himenaeos. Nulla lectus sem, tristique sed, semper
+                in, hendrerit non, sem. Vivamus dignissim massa in ipsum. Morbi
+                fringilla ullamcorper ligula. Nunc turpis. Mauris vitae sapien.
+                Nunc luctus bibendum velit.</p>
+
+            <p>Morbi faucibus volutpat sapien. Nam ac mauris at justo adipiscing facilisis.
+                Nunc et velit. Donec auctor, nulla id laoreet volutpat, pede erat feugiat
+                ante, auctor facilisis dui augue non turpis. </p> <!--/lorem-->
+        </main>
+        <footer>
+            <h1>Rodapé</h1>
+        </footer>
+        <script src="prefixfree.min.js"></script>
+    </body>
+</html>
