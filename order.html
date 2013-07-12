@@ -9,141 +9,74 @@
                 -moz-box-sizing: border-box;
                 box-sizing: border-box;
             }
-            html, body {
-                height: 100%;
-            }
-            body {
-                display: flex;
-                flex-direction: column;
-                font-family: serif;
-            }
-            main {
-                flex: 1;
-                overflow: auto;
-            }
-            nav {
-                order: 2;
-            }
-            header {
-                background: #033e6b; /* Old browsers */
-                background: -moz-linear-gradient(top,  #033e6b 0%, #033e6b 61%, #001e4b 100%); /* FF3.6+ */
-                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#033e6b), color-stop(61%,#033e6b), color-stop(100%,#001e4b)); /* Chrome,Safari4+ */
-                background: -webkit-linear-gradient(top,  #033e6b 0%,#033e6b 61%,#001e4b 100%); /* Chrome10+,Safari5.1+ */
-                background: -o-linear-gradient(top,  #033e6b 0%,#033e6b 61%,#001e4b 100%); /* Opera 11.10+ */
-                background: -ms-linear-gradient(top,  #033e6b 0%,#033e6b 61%,#001e4b 100%); /* IE10+ */
-                background: linear-gradient(to bottom,  #033e6b 0%,#033e6b 61%,#001e4b 100%); /* W3C */
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#033e6b', endColorstr='#001e4b',GradientType=0 ); /* IE6-9 */
-                color: #f0f0f0;
-                padding: 1em;
-            }
-            header h1:before {
-                content: url(http://lorempixel.com/32/32/abstract/);
-                vertical-align: middle;
-                margin-right: .5em;
-            }
-            header h1 {
-                vertical-align: middle;
-                font-weight: bold;
-                font-size: 250%;
-            }
-            .banner {
-                background-image: url(http://lorempixel.com/300/300/business/);
-                background-position: top center;
-                background-repeat: no-repeat;
-                background-size: 100% auto;
-                padding-top: calc(25% + .75em);
-                height: 100%;
-                width: 25%;
-                display: inline-block;
+            h1 {
                 text-align: center;
-                margin: 1em 2.5%;
-            }
-            nav {
-                background: #96c3f2; /* Old browsers */
-                background: -moz-linear-gradient(top,  #96c3f2 0%, #66a3d2 100%); /* FF3.6+ */
-                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#96c3f2), color-stop(100%,#66a3d2)); /* Chrome,Safari4+ */
-                background: -webkit-linear-gradient(top,  #96c3f2 0%,#66a3d2 100%); /* Chrome10+,Safari5.1+ */
-                background: -o-linear-gradient(top,  #96c3f2 0%,#66a3d2 100%); /* Opera 11.10+ */
-                background: -ms-linear-gradient(top,  #96c3f2 0%,#66a3d2 100%); /* IE10+ */
-                background: linear-gradient(to bottom,  #96c3f2 0%,#66a3d2 100%); /* W3C */
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96c3f2', endColorstr='#66a3d2',GradientType=0 ); /* IE6-9 */
-                color: #f0f0f0;
-                text-align: center;
-                overflow: hidden;
-            }
-            nav ul {
-                display: inline-block;
-            }
-            nav li {
-                float: left;
-                list-style: none;
-                border-right: 1px solid #cce;
-                border-left: 1px solid #99e;
-            }
-            nav li:first-child {
-                border-left: none;
-            }
-            nav li:last-child {
-                border-right: none;
-            }
-            nav a {
-                color: #f0f0f0;
-                padding: .75em;
-                display: block;
-                text-decoration: none;
-            }
-            nav a:hover {
-                color: #0f0f0f;
-                background: #f0f0f0; /* Old browsers */
-                background: -moz-linear-gradient(top,  #f0f0f0 0%, #aaa 100%); /* FF3.6+ */
-                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f0f0), color-stop(100%,#aaa)); /* Chrome,Safari4+ */
-                background: -webkit-linear-gradient(top,  #f0f0f0 0%,#aaa 100%); /* Chrome10+,Safari5.1+ */
-                background: -o-linear-gradient(top,  #f0f0f0 0%,#aaa 100%); /* Opera 11.10+ */
-                background: -ms-linear-gradient(top,  #f0f0f0 0%,#aaa 100%); /* IE10+ */
-                background: linear-gradient(to bottom,  #f0f0f0 0%,#aaa 100%); /* W3C */
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#aaa',GradientType=0 ); /* IE6-9 */
-            }
-            main {
-                padding: 1em;
-            }
-            main h1 {
-                color: #666;
-                font-size: 175%;
-                font-weight: bold;
-            }
-            main h2 {
-                color: #25567b;
-                font-size: 120%;
+                line-height: 2;
                 font-weight: normal;
-                font-style: italic;
+                font-size: 300%;
             }
-            main ul {
+            .pacotes {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 40px 0;
+            }
+            .pacote {
+                flex: 1 1 230px;
+                list-style: none;
+                background: #ddd url(http://lorempixel.com/200/200/) center top 10px no-repeat;
+                padding: 215px 5% 10px;
                 text-align: center;
+            }
+            .pacote-nome {
+                font-size: 150%;
+                display: block;
+            }
+            .pacote-preco {
+                color: #333;
+            }
+            .pacote-principal {
+                flex-basis: 100%;
+                background-color: #f6f6f6;
+                font-size: 150%;
+            }
+
+            /* destaque para telas largas (3 colunas) */
+            @media (min-width: 940px) {
+                .pacote-principal {
+                    order: 2;
+                    transform: scale(1.2);
+                    flex-basis: 230px;
+                    border: 10px double #aaa;
+                    border-radius: 10px;
+                }
+                .pacote-menor {
+                    order: 1;
+                }
+                .pacote-maior {
+                    order: 3;
+                }
             }
         </style>
         <meta charset="utf-8">
         <title>Ordem diferente!</title>
     </head>
     <body>
-        <header>
-            <h1>Minha empresa</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-        <main>
-            <h1>Bem vindo ao site da Minha empresa</h1>
-            <h2>Uma empresa diferente</h2>
-            <ul>
-                <li class="banner"><strong>Ética</strong></li>
-                <li class="banner"><strong>Eficiência</strong></li>
-                <li class="banner"><strong>Agilidade</strong></li>
-            </ul>
-        </main>
+        <h1>Pacotes</h1>
+        <ul class="pacotes">
+            <li class="pacote pacote-principal">
+                <span class="pacote-nome">Super ultra master!</span>
+                <span class="pacote-preco">por apenas R$ 123,45</span>
+            </li>
+            <li class="pacote pacote-menor">
+                <span class="pacote-nome">Simples</span>
+                <span class="pacote-preco">por apenas R$ 12,34</span>
+            </li>
+            <li class="pacote pacote-maior">
+                <span class="pacote-nome">Mais poderoso ainda!</span>
+                <span class="pacote-preco">por apenas R$ 234,56</span>
+            </li>
+        </ul>
         <script src="prefixfree.min.js"></script>
     </body>
 </html>
