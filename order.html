@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            html, body {
+                height: 100%;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+            main {
+                flex: 1;
+                overflow: auto;
+            }
+            nav {
+                order: 2;
+            }
+            /*footer {
+                order: 3;
+            }*/
+            header {
+                background-color: #033e6b;
+                color: #f0f0f0;
+                padding: 1em;
+            }
+            header h1:before {
+                content: url(http://lorempixel.com/32/32/abstract/);
+                vertical-align: middle;
+                margin-right: .5em;
+            }
+            header h1 {
+                vertical-align: middle;
+                font-weight: bold;
+                font-size: 250%;
+            }
+            .texto {
+                float: left;
+                width: 50%;
+            }
+            .banner {
+                background-image: url(http://lorempixel.com/200/200/business/);
+                background-position: top center;
+                background-repeat: no-repeat;
+                padding-top: 210px;
+                min-width: 200px;
+                display: inline-block;
+                text-align: center;
+                margin: 0.75em 1em;
+            }
+            nav {
+                background-image: linear-gradient(to top, #66a3d2, #96c3f2);
+                color: #f0f0f0;
+                text-align: center;
+                overflow: hidden;
+            }
+            nav ul {
+                display: inline-block;
+            }
+            nav li {
+                float: left;
+                list-style: none;
+                border-right: 1px solid #eee;
+                border-left: 1px solid #999;
+            }
+            nav li:first-child {
+                border-left: none;
+            }
+            nav li:last-child {
+                border-right: none;
+            }
+            nav a {
+                color: #f0f0f0;
+                padding: .75em;
+                display: block;
+                text-decoration: none;
+            }
+            nav a:hover {
+                color: #0f0f0f;
+                background-image: linear-gradient(to bottom, #f0f0f0, #eee);
+            }
+            main {
+                padding: 1em;
+            }
+            main h1 {
+                color: #666;
+                font-size: 175%;
+                font-weight: bold;
+            }
+            main h2 {
+                color: #25567b;
+                font-size: 120%;
+                font-weight: normal;
+                font-style: italic;
+            }
+            main ul {
+                float: right;
+                width: 50%;
+                text-align: center;
+            }
+            main p {
+                margin: 1em .75em;
+            }
+            footer {
+                background-color: #25567b;
+                color: #ccc;
+                font-size: 80%;
+                padding: .75em;
+            }
+        </style>
+        <meta charset="utf-8">
+        <title>Ordem diferente!</title>
+    </head>
+    <body>
+        <header>
+            <h1>Minha empresa</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Bem vindo ao site da Minha empresa</h1>
+            <h2>Uma empresa diferente</h2>
+            <section class="texto">
+                <!--lorem--> <p>Varius erat risus
+                    vel magna. Fusce nec ante quis dolor vestibulum bibendum.
+                    Pellentesque sit amet urna.</p>
+                <p>Curabitur eget nisi at lectus placerat gravida. Vivamus nulla. Donec luctus.
+                    Sed quis tellus. Quisque lobortis faucibus mi. Aenean vitae risus ut arcu
+                    malesuada ornare. Maecenas nec erat. Sed rhoncus, elit laoreet sagittis
+                    luctus, nulla leo faucibus lectus, vitae accumsan est diam id felis. Nunc
+                    dui pede, vestibulum eu, elementum et, gravida quis, sapien. Donec blandit.
+                    Donec sed magna. Curabitur a risus. Nullam nibh libero, sagittis vel,
+                    hendrerit accumsan, pulvinar consequat, tellus. Donec varius dictum nisl.
+                    Vestibulum suscipit enim ac nulla. Proin tincidunt. Proin sagittis.
+                    Curabitur.</p> <!--/lorem-->
+            </section>
+            <ul>
+                <li class="banner"><strong>Ética</strong></li>
+                <li class="banner"><strong>Eficiência</strong></li>
+                <li class="banner"><strong>Agilidade</strong></li>
+            </ul>
+        </main>
+        <footer>
+            Copyright &copy; Minha empresa 1995
+        </footer>
+        <script src="prefixfree.min.js"></script>
+    </body>
+</html>

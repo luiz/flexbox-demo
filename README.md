@@ -12,6 +12,8 @@ navegador e veja como os layouts se adaptam.
 * [Quatro caixas (usando flexbox; compare os CSS!)](http://luiz.github.io/flexbox-demo/caixas-mais-uma-flexbox.html)
 * [Footer (usando position)](http://luiz.github.io/flexbox-demo/footer-position.html)
 * [Footer (usando flexbox)](http://luiz.github.io/flexbox-demo/footer-flexbox.html)
+* [Cabeçalho e rodapé fixos](http://luiz.github.io/flexbox-demo/fixed-header.html)
+* [Ordem visual diferente da ordem no código](http://luiz.github.io/flexbox-demo/order.html)
 
 **Nota**: verifique se seu navegador já suporta o uso do Flexbox
 [aqui](http://caniuse.com/flexbox). Navegadores suportados até o momento
