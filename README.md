@@ -13,14 +13,14 @@ navegador e veja como os layouts se adaptam.
 * [Footer (usando position)](http://luiz.github.io/flexbox-demo/footer-position.html)
 * [Footer (usando flexbox)](http://luiz.github.io/flexbox-demo/footer-flexbox.html)
 * [Cabeçalho e rodapé fixos](http://luiz.github.io/flexbox-demo/fixed-header.html)
-* [Ordem visual diferente da ordem no código](http://luiz.github.io/flexbox-demo/order.html) <small>Nota: este demo não funciona no Firefox por enquanto. [Veja o bug cadastrado no bugtracker do navegador](https://bugzilla.mozilla.org/show_bug.cgi?id=702508).</small>
+* [Ordem visual diferente da ordem no código](http://luiz.github.io/flexbox-demo/order.html). <small>Nota: este demo não funciona no Firefox por enquanto. [Veja o bug cadastrado no bugtracker do navegador](https://bugzilla.mozilla.org/show_bug.cgi?id=702508).</small>
 
 **Nota**: verifique se seu navegador já suporta o uso do Flexbox
 [aqui](http://caniuse.com/flexbox). Navegadores suportados até o momento
-(10/07/2013):
+(12/07/2013):
 
-* IE a partir da versão 11
-* Firefox a partir da versão 21 (ainda sem suporte completo)
-* Chrome a partir da versão 21
+* Firefox (ainda sem suporte completo)
+* Chrome
+* Safari
+* IE a partir da versão 10
 * Opera a partir da versão 12.1
-* Safari e iOS Safari a partir da versão 7
